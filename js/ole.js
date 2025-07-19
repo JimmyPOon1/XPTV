@@ -27,9 +27,9 @@ const appConfig = {
       url: '/index.php/vod/show/id/2.html',
     },
   }, {
-    name: '综艺',
+    name: '国产剧',
     ext: {
-      url: '/index.php/vod/show/id/3.html',
+      url: '/index.php/vod/show/id/202.html',
     },
   }, {
     name: '动漫',
