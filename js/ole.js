@@ -5,43 +5,50 @@ const headers = {
   'Origin': 'https://www.olehdtv.com',
   'User-Agent': UA,
 }
-let $config = argsify($config_str)
+let $config = argsify($config_str);
 if (!$config) {
     $config = {
-tabs: [{
-    name: '首页',
-    ext: {
-      url: '/index.php',
-      hasMore: false
-    },
-  }, {
-    name: '电影',
-    ext: {
-      url: '/index.php/vod/show/id/1.html'
-    },
-  }, {
-    name: '电视剧',
-    ext: {
-      url: '/index.php/vod/show/id/2.html',
-    },
-  }, {
-    name: '国产剧',
-    ext: {
-      url: '/index.php/vod/show/id/202.html',
-    },
-  }, {
-    name: '动漫',
-    ext: {
-      url: '/index.php/vod/show/id/4.html'
-    },
-  },
-]}
+        tabs: [
+            {
+                name: '首页',
+                ext: {
+                    url: '/index.php',
+                    hasMore: false
+                }
+            },
+            {
+                name: '电影',
+                ext: {
+                    url: '/index.php/vod/show/id/1.html'
+                }
+            },
+            {
+                name: '电视剧',
+                ext: {
+                    url: '/index.php/vod/show/id/2.html'
+                }
+            },
+            {
+                name: '国产剧',
+                ext: {
+                    url: '/index.php/vod/show/id/202.html'
+                }
+            },
+            {
+                name: '动漫',
+                ext: {
+                    url: '/index.php/vod/show/id/4.html'
+                }
+            }
+        ]
+    }
 }
+
 let appConfig = {
-  ver: 1,
-  title: "欧乐影院",
-  site: "https://www.olehdtv.com",
-  tabs: $config.tabs
+    ver: 1,
+    title: "欧乐影院",
+    site: "https://www.olehdtv.com",
+    tabs: $config.tabs
 }
   
 async function getConfig() {
