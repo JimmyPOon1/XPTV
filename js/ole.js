@@ -8,7 +8,7 @@ const headers = {
 let $config = argsify($config_str)
 if (!$config) {
     $config = {
-        tabs: [{
+tabs: [{
     name: '首页',
     ext: {
       url: '/index.php',
