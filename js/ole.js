@@ -13,31 +13,31 @@ if (!$config) {
                 name: '首页',
                 ext: {
                     url: '/index.php',
-                    hasMore: false
+                    hasMore: false,
                 },
             },
             {
                 name: '电影',
                 ext: {
-                    url: '/index.php/vod/show/id/1.html'
+                    url: '/index.php/vod/show/id/1.html',
                 },
             },
             {
                 name: '电视剧',
                 ext: {
-                    url: '/index.php/vod/show/id/2.html'
+                    url: '/index.php/vod/show/id/2.html',
                 },
             },
             {
                 name: '国产剧',
                 ext: {
-                    url: '/index.php/vod/show/id/202.html'
+                    url: '/index.php/vod/show/id/202.html',
                 },
             },
             {
                 name: '动漫',
                 ext: {
-                    url: '/index.php/vod/show/id/4.html'
+                    url: '/index.php/vod/show/id/4.html',
                 },
             },
         ]
