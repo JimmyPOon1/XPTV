@@ -5,12 +5,10 @@ const headers = {
   'Origin': 'https://www.olehdtv.com',
   'User-Agent': UA,
 }
-
-const appConfig = {
-  ver: 1,
-  title: "欧乐影院",
-  site: "https://www.olehdtv.com",
-  tabs: [{
+let $config = argsify($config_str)
+if (!$config) {
+    $config = {
+        tabs: [{
     name: '首页',
     ext: {
       url: '/index.php',
@@ -36,9 +34,16 @@ const appConfig = {
     ext: {
       url: '/index.php/vod/show/id/4.html'
     },
-  }]
+  },
+]}
 }
-
+let appConfig = {
+  ver: 1,
+  title: "欧乐影院",
+  site: "https://www.olehdtv.com",
+  tabs: $config.tabs
+}
+  
 async function getConfig() {
   return jsonify(appConfig)
 }
